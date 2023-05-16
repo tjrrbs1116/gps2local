@@ -47,8 +47,8 @@ namespace s_gps2local
             bool make_transform_ok = false;
             double gps_params[6];
             rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr position_pub_;
-
-            
+            float previous_x;
+            float previous_y;
 
     };
 }
